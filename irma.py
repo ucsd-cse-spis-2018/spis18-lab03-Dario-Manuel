@@ -52,13 +52,22 @@ def irma():
         pointreader = csv.reader(csvfile)
 
         # You'll need to add some code here, before the loop
+        # One thing you'll need to figure out how to do is to
+        # skip the first line of the file (which is the header).
+        # You might use a boolean variable, or you can
+        # look into Python's built-in next function
+        #(https://docs.python.org/3/library/functions.html#next)
+        # pointreader is an iterator
 
         for row in pointreader:
-            # This code just prints out each row in the file
-            # You'll need to change it
-            for data in row:
-                print(data, ' ', end='')
-            print()
+            # row is a list representing each line in the csv file
+            # Each comma separated element is in its own index position
+            # This code just prints out the date and time elements of each
+            # row in the file.
+            # Make sure you understand what is happening here.
+            # Then, you'll need to change this code
+            print("Date:", row[0], "Time:", row[1])
+
 
 
     # Hack to make sure a reference to the background image stays around
