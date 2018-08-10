@@ -21,7 +21,7 @@ def irma_setup():
     
     turtle.setworldcoordinates(-90, 0, -17.66, 45)  # set the coordinate system to match lat/long
 
-    map_bg_img = tkinter.PhotoImage(file="images/atlantic-basin.png")
+    map_bg_img = tkinter.PhotoImage(file="images/atlantic-basin.gif")
 
     # additional kludge for positioning the background image
     # when setworldcoordinates is used
