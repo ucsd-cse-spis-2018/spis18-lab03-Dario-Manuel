@@ -1,6 +1,7 @@
 #Turtle will draw the letter D
 import turtle
 def drawD(theTurtle, size):
+''' Draws the letter D, depending on the size given '''
     theTurtle.left(90)
     theTurtle.forward(100 * size)
     theTurtle.right(90)
