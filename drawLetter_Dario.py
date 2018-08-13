@@ -1,4 +1,4 @@
-#Turtle will draw Dario
+#Turtle will draw the letter D
 import turtle
 def drawD(theTurtle):
     theTurtle.left(90)
